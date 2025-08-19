@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+form{
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(233, 232, 236);
+    color: black;
+    width: 50%;
+    height: 50%;
+    
+}
+
+label{
+    margin-top: 50px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
