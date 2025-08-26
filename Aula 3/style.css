@@ -8,7 +8,12 @@ body{
     width: 60%; /*Largura de 60%*/
     height: auto;   /*Altura automática*/
     margin: 0 auto; /*Centraliza a section*/
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 2px #ffffff; 
+    line-height: 1.5;            
     
+ 
 }
 
 
@@ -28,6 +33,8 @@ body{
     border: 2px solid #0d95e4;   /*Tira a borda*/
     margin: 15px 0px;
     padding: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 
@@ -40,6 +47,23 @@ body{
     cursor: pointer; /*Muda o cursor para indicar que é clicável*/
     font-size: 18px;
     font-weight: bold; /*Deixa o texto em negrito*/
-    transition: background 0.3s; /*Transição suave para o efeito hover*/
+    /* transition: background 0.3s; Transição suave para o efeito hover*/
     float: right;
+    width: 20%;
     }
+
+    /*classe:Eventos*/
+.buttonEnviar:hover{
+    background: #fdfeff; /*Cor de fundo ao passar o mouse*/
+    color: black;
+}
+
+h2{
+    margin-top: 10%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
