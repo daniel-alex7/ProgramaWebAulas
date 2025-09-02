@@ -1,0 +1,52 @@
+.sec_lanche{
+    background-color: rgb(163, 30, 26);
+    border: 2px solid rgb(255, 251, 1);
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+}
+
+body{
+    background-color: rgb(255, 251, 1);
+}
+
+h1{
+    color: #fdfeff;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.buttonPedir{
+    background: #e46e0d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer; /*Muda o cursor para indicar que é clicável*/
+    font-size: 18px;
+    font-weight: bold; /*Deixa o texto em negrito*/
+    /* transition: background 0.3s; Transição suave para o efeito hover*/
+    float: center;
+    width: 20%;
+    }
+
+    /*classe:Eventos*/
+.buttonPedir:hover{
+    background: #fdfeff; /*Cor de fundo ao passar o mouse*/
+    color: black;
+}
+
+
+table {
+      margin: 0 auto; /* centraliza horizontalmente */
+      border-collapse: collapse; /* opcional, deixa as bordas mais limpas */
+      
+    }
+
+th, td {
+      border: 1px solid #ccc; /* Adiciona bordas a cada célula */
+      padding: 8px; /* Adiciona espaço interno às células */
+      text-align: left; /* Alinha o texto à esquerda */
+    }

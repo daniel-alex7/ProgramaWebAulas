@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanches</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <script>
+        function minhaFuncao() {
+            var valorLanche = parseFloat(prompt("Digite o valor do lanche:"));
+            var quantidade = parseInt(prompt("Digite a quantidade:"));
+
+            var total = valorLanche * quantidade;
+
+            
+
+            alert("O valor total da compra é: R$ " + total.toFixed(2));
+
+
+        };
+
+        //O valor do lanche e a quantidade. Calcular o valor total da compra e exibir o resultado em um alert.
+
+
+
+    </script>
+
+    
+
+    <section class="sec_lanche">
+         <h1> Cardápio </h1> <br>
+       
+
+            <table>
+
+                <tr>
+                    <td> <h1> Xbacon </h1> </td>
+
+                    <td><img src="imagens/xbacon.jpg" alt="" width="300px" height="200px"></td>
+
+                    <td>R$ 40,00</td>
+
+                </tr>
+
+                <tr>
+                    <td><h1> Xburguer </h1></td>
+
+                    <td><img src="imagens/xburguer.jpg" alt="" width="300px" height="200px"></td>
+
+                    <td>R$ 32,00</td>
+
+                </tr>
+
+                 <tr>
+                    <td><h1> Casal </h1></td>
+
+                    <td><img src="imagens/casal.jpeg" alt="" width="300px" height="200px"></td>
+
+                    <td>R$ 70,00</td>
+
+                </tr>
+            </table>
+            <br> <br> <br>
+
+
+        <div>
+            <div>
+                <input type="submit" value="Pedir" class="buttonPedir" onclick=minhaFuncao()>
+            </div> <br> <br> <br>
+        </div>
+
+
+
+    </section>
+</body>
+
+</html>
