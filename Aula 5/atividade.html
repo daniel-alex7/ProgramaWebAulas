@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+</head>
+<body>
+    <!-- Criar um página que leia 2 valores referentes a 2 notas de
+avaliação, calcule a média e exiba a mensagem aprovado
+caso a média seja maior ou igual a 6 ou reprovado caso
+contrário. -->
+
+<script>
+    var nota1 = parseFloat(prompt("Digite a primeira nota: "));
+    var nota2 = parseFloat(prompt("Digite a segunda nota: "));
+
+    var media = (nota1 + nota2) / 2;
+
+    if (media >= 6 ){
+        alert("Aluno foi aprovado com média: "+ media)
+    }else{
+        alert("Aluno reprovado com média: "+ media)
+    }
+
+
+
+
+</script>
+    
+</body>
+</html>
