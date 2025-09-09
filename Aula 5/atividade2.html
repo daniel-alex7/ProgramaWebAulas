@@ -1,0 +1,30 @@
+<title>Atitividade 2</title>
+<script>
+    var n1 = parseFloat(prompt("Digite valor 1: "))
+    var n2 = parseFloat(prompt("Digite valor 2: "))
+    var oper = prompt("Digite a operação: [ + , - , * , / ]")
+
+    switch(oper){
+        case "+":
+            alert("A soma é: " + (n1 + n2));
+            break;
+        case "-":
+            alert("A subtração é: " + (n1 - n2));
+            break;
+        case  "*":
+            alert("A multiplicação é: " + (n1 * n2));
+            break;
+        case "/":
+            if(n2 == 0){
+                alert("Impossível dividir por 0");
+            }
+            else{
+                alert("A divisão é: " + (n1 / n2));
+            }
+            break;
+        default:
+            alert("Operação inválida")
+    }
+
+
+</script>
