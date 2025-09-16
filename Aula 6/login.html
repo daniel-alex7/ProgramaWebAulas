@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <script>
+
+
+
+        function login() {
+            const email = 'admin@gmail.com';
+            const senha = 'admin123';
+
+            let contador = 0;
+
+            const usumail = document.getElementById('usumail').value;
+            const usuenha = document.getElementById('usuenha').value;
+
+            while(true){
+                if (contador < 3) {
+                    alert("Você passou de 3 tentativas");
+                    return;
+                }
+
+                if (usumail === email && usuenha === senha) {
+                    alert("Você já pode entrar!");
+                    contador = 0; // reseta o contador ao acertar
+                } else {
+                    contador += 1;
+                    alert("Senha incorreta e/ou E-mail incorreto");
+                    if (contador === 3) {
+                        alert("Você passou de 3 tentativas");
+                    }
+                }
+            }
+
+                
+            }
+        
+
+
+
+
+
+
+    </script>
+
+
+    <div>
+        <label for="">E-mail</label>
+        <input type="email" placeholder="Digite seu E-mail..." id="usumail">
+    </div> <br>
+
+    <div>
+        <label for="">Senha </label>
+        <input type="password" placeholder="Digite sua senha" id="usuenha">
+    </div> <br>
+
+
+    <input type="submit" value="Enviar" class="buttonEnviar" onclick=login()>
+
+
+
+</body>
+
+</html>
