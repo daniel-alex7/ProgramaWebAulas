@@ -13,34 +13,40 @@
 
 
         function login() {
-            const email = 'admin@gmail.com';
-            const senha = 'admin123';
+            email = document.getElementById("usumail").value;
+            senha = document.getElementById("usuenha").value;
 
-            let contador = 0;
 
-            const usumail = document.getElementById('usumail').value;
-            const usuenha = document.getElementById('usuenha').value;
 
-            while(true){
-                if (contador < 3) {
-                    alert("Você passou de 3 tentativas");
-                    return;
-                }
+        }
+            // const email = 'admin@gmail.com';
+            // const senha = 'admin123';
 
-                if (usumail === email && usuenha === senha) {
-                    alert("Você já pode entrar!");
-                    contador = 0; // reseta o contador ao acertar
-                } else {
-                    contador += 1;
-                    alert("Senha incorreta e/ou E-mail incorreto");
-                    if (contador === 3) {
-                        alert("Você passou de 3 tentativas");
-                    }
-                }
-            }
+            // let contador = 0;
+
+            // const usumail = document.getElementById('usumail').value;
+            // const usuenha = document.getElementById('usuenha').value;
+
+            // while(true){
+            //     if (contador < 3) {
+            //         alert("Você passou de 3 tentativas");
+            //         return;
+            //     }
+
+            //     if (usumail === email && usuenha === senha) {
+            //         alert("Você já pode entrar!");
+            //         contador = 0; // reseta o contador ao acertar
+            //     } else {
+            //         contador += 1;
+            //         alert("Senha incorreta e/ou E-mail incorreto");
+            //         if (contador === 3) {
+            //             alert("Você passou de 3 tentativas");
+            //         }
+            //     }
+            // }
 
                 
-            }
+            // }
         
 
 
