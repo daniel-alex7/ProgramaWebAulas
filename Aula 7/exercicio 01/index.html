@@ -4,14 +4,34 @@ assentos disponíveis. Permita reservar um assento (retirar do
 array) e verificar quais assentos ainda estão disponíveis. -->
 
 <!DOCTYPE html>
-<html lang="pt-br>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reserva de avião</title>
-    <script src="aviao.js" defer></script>
+    <title>Sistema de Reservas de Avião</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
+    <div class="container">
+
+        <h1>Reservas de Assentos de Avião</h1>
+        
+        <div class="card">
+            <h2>Assentos Disponíveis</h2>
+            <div id="assentos-disponiveis" class="assentos-container"></div>
+        </div>
+
+        <div class="card">
+            <h2>Reservar Assento</h2>
+            <form id="form-reserva">
+                <label for="numero-assento">Selecione o assento:</label>
+                <input type="number" id="numero-assento"  name="numero-assento">
+                <button type="submit">Reservar</button>
+            </form>
+        </div>
+        <div id="mensagem" class="mensagem"></div>
+    </div>
 
     
 </body>
