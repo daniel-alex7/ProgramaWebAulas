@@ -1,85 +1,26 @@
-// Array para armazenar os assentos disponíveis.
-// Começamos com 10 assentos de exemplo.
-let assentosDisponiveis = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// Crie uma aplicação web referente a um Sistema de Reservas
+// para um avião. Armazene em um array os números de
+// assentos disponíveis. Permita reservar um assento (retirar do
+// array) e verificar quais assentos ainda estão disponíveis
 
-// Referências aos elementos HTML
-const assentosDisponiveisDiv = document.getElementById('assentos-disponiveis');
-const selectAssento = document.getElementById('numero-assento');
-const formReserva = document.getElementById('form-reserva');
-const mensagemDiv = document.getElementById('mensagem');
 
-/**
- * Função para exibir os assentos disponíveis na tela.
- * Ela itera sobre o array e cria elementos HTML para cada assento.
- */
-function exibirAssentos() {
-    assentosDisponiveisDiv.innerHTML = '';
-    selectAssento.innerHTML = '';
     
-    if (assentosDisponiveis.length === 0) {
-        assentosDisponiveisDiv.innerHTML = '<p>Todos os assentos foram reservados.</p>';
-        return;
-    }
+
+
+
+let assentosDisponiveis = [1,2,3,4,5,6,7,8,9,10];
+
+function reservar() {
+    for(i = 1; i < 3; i ++){
+    alert( "Você pode reservar até 3 assentos. Esses assentos estão disponíveis: " + assentosDisponiveis);
     
-    // Exibe os assentos como blocos
-    assentosDisponiveis.forEach(assento => {
-        const span = document.createElement('span');
-        span.classList.add('assento');
-        span.textContent = `Assento ${assento}`;
-        assentosDisponiveisDiv.appendChild(span);
+    let opcao = parseInt(prompt("Deseja reservar, digite um número: "));
 
-        // Preenche o <select> para reserva
-        const option = document.createElement('option');
-        option.value = assento;
-        option.textContent = `Assento ${assento}`;
-        selectAssento.appendChild(option);
-    });
-}
-
-/**
- * Função para reservar um assento.
- * Remove o assento do array `assentosDisponiveis`.
- */
-function reservarAssento(numero) {
-    // Converte o número para inteiro
-    const assentoParaReservar = parseInt(numero);
-
-    // Encontra o índice do assento no array
-    const indice = assentosDisponiveis.indexOf(assentoParaReservar);
-
-    // Verifica se o assento existe antes de remover
-    if (indice !== -1) {
-        // Remove 1 elemento a partir do índice encontrado
-        assentosDisponiveis.splice(indice, 1);
-        exibirMensagem(`Assento ${assentoParaReservar} reservado com sucesso!`, 'sucesso');
-        // Atualiza a exibição dos assentos
-        exibirAssentos();
+    if (assentosDisponiveis.indexOf(opcao) === -1) {
+        alert("Número inválido ou já reservado");
     } else {
-        exibirMensagem(`O assento ${assentoParaReservar} não está disponível ou não existe.`, 'erro');
-    }
+        assentosDisponiveis.splice(assentosDisponiveis.indexOf(opcao), 1);
+        alert("Assento " + opcao + " reservado com sucesso");
+        alert("Ainda disponíveis: " + assentosDisponiveis);
+    }}
 }
-
-/**
- * Função para exibir mensagens na interface.
- */
-function exibirMensagem(texto, tipo) {
-    mensagemDiv.textContent = texto;
-    mensagemDiv.className = `mensagem ${tipo}`;
-}
-
-// Adiciona um "ouvinte" de evento para o formulário de reserva
-formReserva.addEventListener('submit', function(event) {
-    // Previne o comportamento padrão de recarregar a página
-    event.preventDefault();
-    
-    const assentoSelecionado = selectAssento.value;
-    if (assentoSelecionado) {
-        reservarAssento(assentoSelecionado);
-    } else {
-        exibirMensagem('Nenhum assento foi selecionado.', 'erro');
-    }
-});
-
-// Inicializa a aplicação exibindo os assentos pela primeira vez
-exibirAssentos();
-
