@@ -24,7 +24,7 @@
 </body>
 </html>
 <script>
-    
+
     // Document Object Model (DOM)
     // Manipulação de elementos HTML com JavaScript 
     // Selecionar elementos
@@ -32,8 +32,8 @@
     // Adicionar e remover elementos
     // Eventos e interatividade 
 
-   /* var tx = document.getElementById('idTexto1')
-    // alert(tx.innerHTML)
+   
+    /* // alert(tx.innerHTML)
 
     var txD = document.querySelector('#divTx')
 
@@ -43,7 +43,24 @@
 
     let nome = document.querySelector('#txNome')
 
+    var txD = document.getElementById('idTexto1')
 
+    let b = document.querySelector('#btProc')
+    b.addEventListener('click',exibirDados)
+    b.addEventListener('mouseout', limparDados)
+
+    function exibirDados(){
+        txD.innerHTML = txNome.value
+        txD.style.background = '#0f0'
+    }
+
+    function limparDados(){
+        txD.innerHTML = ''
+
+        txD.style.color = '#000'
+        txD.style.background = '#fff'
+
+    }
 
 
 </script>
