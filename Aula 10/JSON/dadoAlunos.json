@@ -1,0 +1,14 @@
+{
+    "alunos": [
+       {
+        "nome":"Daniel",
+        "idade":19,
+        "fone":999
+    },
+    {
+        "nome":"Jorel",
+        "idade":19,
+        "fone":934
+    }
+    ]
+}
