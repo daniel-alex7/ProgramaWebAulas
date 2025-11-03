@@ -1,0 +1,29 @@
+{
+    "alunos":[
+        {
+            "nome":"Bruna",
+            "nascimento":"2025/10/25",
+            "email":"bruna@gmail.com"
+        },
+        {
+            "nome":"Adriana",
+            "nascimento":"2000/02/12",
+            "email":"adriana@gmail.com"
+        },
+        {
+            "nome":"Matheus",
+            "nascimento":"1990/07/07",
+            "email":"matheus@gmail.com"
+        },
+        {
+            "nome":"Carlos",
+            "nascimento":"1978/03/16",
+            "email":"Carlos@gmail.com"
+        },
+        {
+            "nome":"Rodrigo",
+            "nascimento":"1982/09/03",
+            "email":"rodrigo@gmail.com"
+        }
+    ]
+}
