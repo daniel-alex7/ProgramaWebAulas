@@ -3,27 +3,32 @@
         {
             "nome":"Bruna",
             "nascimento":"2025/10/25",
-            "email":"bruna@gmail.com"
+            "email":"bruna@gmail.com",
+            "cpf":"123.456.789-00"
         },
         {
             "nome":"Adriana",
             "nascimento":"2000/02/12",
-            "email":"adriana@gmail.com"
+            "email":"adriana@gmail.com",
+            "cpf":"222.455.343-00"
         },
         {
             "nome":"Matheus",
             "nascimento":"1990/07/07",
-            "email":"matheus@gmail.com"
+            "email":"matheus@gmail.com",
+            "cpf":"563.435.729-00"
         },
         {
             "nome":"Carlos",
             "nascimento":"1978/03/16",
-            "email":"Carlos@gmail.com"
+            "email":"Carlos@gmail.com",
+            "cpf":"333.456.559-20"
         },
         {
             "nome":"Rodrigo",
             "nascimento":"1982/09/03",
-            "email":"rodrigo@gmail.com"
+            "email":"rodrigo@gmail.com",
+            "cpf":"793.856.709-55"
         }
     ]
 }

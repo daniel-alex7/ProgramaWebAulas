@@ -14,6 +14,7 @@ fetch("dadosAlunos.json").then((response) =>{
                        <td>${aluno.nascimento}</td>
                        <td>${nascFormatado}</td>
                        <td>${aluno.email}</td>
+                       <td>${aluno.cpf}</td>
                     </tr>`
             
         });
