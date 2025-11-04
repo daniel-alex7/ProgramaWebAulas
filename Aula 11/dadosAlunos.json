@@ -2,7 +2,7 @@
     "alunos":[
         {
             "nome":"Bruna",
-            "nascimento":"2025/10/25",
+            "nascimento":"2000/10/25",
             "email":"bruna@gmail.com",
             "cpf":"123.456.789-00"
         },
