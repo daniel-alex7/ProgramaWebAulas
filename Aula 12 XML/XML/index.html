@@ -1,0 +1,32 @@
+<!-- O que é XML?  -->
+<!-- Extensible Markup Language, linguagem de marcação extensivel -->
+<!-- Feita para definir dados, XML possui somente os dados, a visualização pode ser feita por outras linguagens -->
+<!-- Não possui tags definidas -->
+<!-- Usamos XML em:  JS, Java, HTML/CSS/JS, PHP/JSP, Aplicativos Mobile -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Usando XML e XMLHttpRequest Object</h2>
+
+<div id="demo">
+<button type="button" onclick="loadXMLDoc()">Change Content</button>
+</div>
+
+<script>
+function loadXMLDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "xmlhttp_info.txt", true);
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>
