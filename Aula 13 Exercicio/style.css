@@ -1,0 +1,120 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f2f2f2;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container do formulário */
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 380px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;  /* A tabela fica bem embaixo */
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="year"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: .2s;
+    font-size: 15px;
+}
+
+input[type="text"]:focus,
+input[type="year"]:focus {
+    border-color: #0077ff;
+    background: #eef6ff;
+}
+
+/* Botão Enviar (INPUT SUBMIT) */
+.buttonEnviar {
+    width: 100%;
+    margin-top: 12px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #0077ff, #0051c7);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.buttonEnviar:hover {
+    background: linear-gradient(135deg, #005fe0, #003f9c);
+    transform: scale(1.03);
+}
+
+/* Botão Mostrar */
+button {
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .2s;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #000;
+    transform: scale(1.03);
+}
+
+/* Div da tabela */
+#mostrador {
+    width: 380px;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+th {
+    background: #0077ff;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Última linha sem borda */
+tr:last-child td {
+    border-bottom: none;
+}

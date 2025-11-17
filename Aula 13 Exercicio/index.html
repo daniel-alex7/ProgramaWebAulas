@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 13</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Crie um forms com campos:
+    Modelo do carro
+    Fabricante do carro
+    Valor
+    Ano 
+
+    Ao preencher o forms e clicar em Enviar
+    Os dados devem ser armazenados no Local Storage
+
+    Exiba os dados armazenados em uma div -->
+
+    <form onsubmit="enviar(event)">
+        <br>
+        <div>
+            <label for=""> Modelo do Carro: </label>
+            <input type="text" placeholder="" id="modCar">
+        </div> <br>
+
+        <div>
+            <label for=""> Fabricante do Carro: </label>
+            <input type="text" placeholder="" id="fabCar">
+        </div> <br>
+
+        <div>
+            <label for=""> Valor: </label>
+            <input type="text" placeholder="" id="valor">
+        </div> <br>
+
+        <div>
+            <label for=""> Ano: </label>
+            <input type="year" placeholder="" id="ano">
+        </div> <br>
+
+        <input type="submit" class="buttonEnviar" onclick="enviar(event)"> <br> <br>
+
+        <button type="button" class="button" onclick="mostrar()" >Mostrar dados</button>
+</form>
+
+        <div id="mostrador" class="mostrador">
+        </div>
+
+</body>
+
+</html>
