@@ -12,7 +12,7 @@ function enviar(event) {
     localStorage.setItem("valor", valor);
     localStorage.setItem("ano", ano);
 
-    alert("Dados salvos com sucesso!");
+    alert("Seus dados foram salvos com sucesso!");
 }
 
 function mostrar() {
