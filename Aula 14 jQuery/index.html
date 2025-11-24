@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 14</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+      <section>
+        <div>
+            <h1>Clique para mostrar tudo:</h1>
+            <button id="mostrarTudo">Clique</button><br><br>
+
+            <h1>Clique para fechar tudo:</h1>
+            <button id="fecharTudo">Clique</button><br><br>
+
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <h1 id="reactTitle"> React </h1>
+        </div>
+
+        <div>
+            <p id="reactContent">É uma biblioteca JavaScript de código aberto para
+                a criação de interfaces de usuário. Foi desenvolvida pelo
+                Facebook e permite a criação de componentes de UI reutilizáveis,
+                que gerenciam seu próprio estado. 
+            </p>
+        </div>
+
+    </section>
+
+    <section>
+        <div>
+            <h1 id="angularTitle"> Angular </h1>
+        </div>
+        <div>
+            <p id="angularContent">É uma plataforma de aplicações web de código-fonte
+                aberto, baseado em TypeScript e liderado pela equipe do Google. 
+                É um framework completo que oferece uma estrutura robusta para o
+                desenvolvimento de aplicações de página única (SPAs). 
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <h1 id="vueTitle"> Vue.js </h1>
+        </div>
+        <div>
+            <p id="vueContent">É um framework progressivo para a construção
+                de interfaces de usuário. Diferente de frameworks monolíticos,
+                o Vue foi projetado para ser adotado de forma incremental, focando
+                apenas na camada de visualização. 
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <h1 id="emberTitle"> Ember.js </h1>
+        </div>
+        <div>
+            <p id="emberContent">É um framework JavaScript produtivo e
+                testado em batalha para a construção de aplicações web
+                modernas. Ele inclui tudo o que é necessário para
+                construir interfaces de usuário ricas que funcionam em qualquer dispositivo.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <h1 id="preactTitle"> Preact </h1>
+        </div>
+        <div>
+            <p id="preactContent">É uma alternativa rápida e leve ao React,
+                com apenas 3kB de tamanho. Ele oferece a mesma API moderna
+                do React e tem como objetivo fornecer uma alternativa de
+                baixo custo em termos de tamanho de arquivo, sem sacrificar a performance.
+            </p>
+        </div>
+    </section>
+
+  
+
+
+
+
+
+</body>
+
+</html>
+
+<script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js" type="text/javascript"></script>
+
+<script>
+
+    $("#reactTitle").click(
+        function () {
+            $("#reactContent").toggle();
+            $("#angularContent").hide();
+            $("#vueContent").hide();
+            $("#emberContent").hide();
+            $("#preactContent").hide();
+        }
+    );
+
+    $("#angularTitle").click(
+        function () {
+            $("#reactContent").hide();
+            $("#angularContent").toggle();
+            $("#vueContent").hide();
+            $("#emberContent").hide();
+            $("#preactContent").hide();
+        }
+    );
+
+    $("#vueTitle").click(
+        function () {
+            $("#reactContent").hide();
+            $("#angularContent").hide();
+            $("#vueContent").toggle();
+            $("#emberContent").hide();
+            $("#preactContent").hide();
+
+        }
+    );
+
+    $("#emberTitle").click(
+        function () {
+            $("#reactContent").hide();
+            $("#angularContent").hide();
+            $("#vueContent").hide();
+            $("#emberContent").toggle();
+            $("#preactContent").hide();
+        }
+    );
+
+$("#preactTitle").click(
+        function () {
+            $("#reactContent").hide();
+            $("#angularContent").hide();
+            $("#vueContent").hide();
+            $("#emberContent").hide();
+            $("#preactContent").toggle();
+        }
+);
+
+$("#mostrarTudo").click(
+    function () {
+            $("#reactContent").toggle();
+            $("#angularContent").toggle();
+            $("#vueContent").toggle();
+            $("#emberContent").toggle();
+            $("#preactContent").toggle();
+        }
+);
+
+$("#fecharTudo").click(
+        function () {
+            $("#reactContent").hide();
+            $("#angularContent").hide();
+            $("#vueContent").hide();
+            $("#emberContent").hide();
+            $("#preactContent").hide();
+        }
+);
+
+
+
+</script>
